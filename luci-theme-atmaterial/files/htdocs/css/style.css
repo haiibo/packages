@@ -783,7 +783,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #B2EFD0 !important;
+    background-color: #B3FFFF !important;
 }
 
 /* fix multiple table */
