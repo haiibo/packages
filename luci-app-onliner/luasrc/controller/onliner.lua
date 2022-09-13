@@ -1,10 +1,9 @@
 module("luci.controller.onliner",package.seeall)
 nixio=require"nixio"
 function index()
-entry({"admin", "status", "onliner"}, alias("admin", "status", "onliner", "onliner"), _("Online User"))
-entry({"admin", "status", "onliner", "onliner"}, template("onliner/onliner"), _("Online User"), 1)
-entry({"admin", "status", "onliner", "speed"}, template("onliner/display"), _("Speed Monitor"), 2)
-entry({"admin", "status", "onliner", "setnlbw"}, call("set_nlbw"))
+entry({"admin", "status", "onliner"}, template("onliner/onliner"), _("Online User"), 10)
+entry({"admin", "nlbw", "speed"}, template("onliner/display"), _("Speed Monitor"), 50)
+entry({"admin", "nlbw", "speed", "setnlbw"}, call("set_nlbw"))
 end
 function set_nlbw()
 	if nixio.fs.access("/var/run/onsetnlbw") then
