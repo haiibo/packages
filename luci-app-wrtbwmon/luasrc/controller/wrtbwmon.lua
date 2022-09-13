@@ -6,7 +6,7 @@ function index()
 	end
 	entry({"admin", "nlbw", "usage"},
 		alias("admin", "nlbw", "usage", "details"),
-		 _("Usage"), 1)
+		 _("Traffic Status"), 60)
 	entry({"admin", "nlbw", "usage", "details"},
 		template("wrtbwmon"),
 		_("Details"), 10).leaf=true
