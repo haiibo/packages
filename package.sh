@@ -68,7 +68,7 @@ svn export https://github.com/haiibo/packages/trunk/luci-app-onliner
 
 mkdir -p helloworld
 pushd helloworld
-git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/chinadns-ng openwrt-passwall/dns2socks openwrt-passwall/dns2tcp openwrt-passwall/hysteria openwrt-passwall/ipt2socks openwrt-passwall/pdnsd-alt openwrt-passwall/trojan-go openwrt-passwall/trojan-plus openwrt-passwall/ssocks openwrt-passwall/microsocks openwrt-passwall/brook ./; rm -rf openwrt-passwall
+git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/{chinadns-ng,dns2socks,dns2tcp,hysteria,ipt2socks,pdnsd-alt,trojan-go,trojan-plus,ssocks,microsocks,brook} ./; rm -rf openwrt-passwall
 svn export --force https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 svn export --force https://github.com/fw876/helloworld/trunk/simple-obfs
 svn export --force https://github.com/fw876/helloworld/trunk/shadowsocks-rust
