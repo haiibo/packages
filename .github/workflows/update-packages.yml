@@ -37,7 +37,6 @@ jobs:
         echo "FILE_PATH=$PWD" >> $GITHUB_ENV
 
     - name: Upload Packages
-      continue-on-error: true
       run: |
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $FILE_PATH
         [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $FILE_PATH
@@ -47,6 +46,7 @@ jobs:
         git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/haiibo/openwrt-packages.git" HEAD:$BRANCH
 
     - name: Delete Workflows
+      if: always()
       uses: Mattraks/delete-workflow-runs@main
       with:
         token: ${{ secrets.ACCESS_TOKEN }}
