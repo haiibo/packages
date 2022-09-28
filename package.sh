@@ -86,11 +86,9 @@ svn export --force https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export --force https://github.com/fw876/helloworld/trunk/tcping
 popd
 
-rm -rf ./*/.git & rm -rf ./*/.gitattributes & rm -rf ./*/LICENSE
-rm -rf ./*/.svn & rm -rf ./*/.github & rm -rf ./*/.gitignore
-rm -rf ./*/README.md & rm -rf ./*/ReadMe.md
-
-find -type f -name Makefile -exec sed -ri 's/mosdns[-_]neo/mosdns/g' {} \;
+rm -rf ./*/.svn & rm -rf ./*/.git* & rm -rf ./*/LICENSE
+find -type f -name '*.md' -print -exec rm -rf {} \;
+find -type f -name Makefile -exec sed -i 's/mosdns[-_]neo/mosdns/g' {} \;
 
 sed -i \
 -e 's?\.\./\.\./\(lang\|devel\)?$(TOPDIR)/feeds/packages/\1?' \
