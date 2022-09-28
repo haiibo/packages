@@ -101,8 +101,6 @@ sed -i 's/"admin"/"admin", "system"/g' luci-app-wizard/files/luci/controller/wiz
 
 bash $GITHUB_WORKSPACE/diy/create_acl_for_luci.sh -a >/dev/null 2>&1
 bash $GITHUB_WORKSPACE/diy/convert_translation.sh -a >/dev/null 2>&1
-
-rm -rf create_acl_for_luci.err & rm -rf create_acl_for_luci.ok
-rm -rf create_acl_for_luci.warn
+rm -rf create_acl_for_luci.*
 
 exit 0
