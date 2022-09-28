@@ -98,8 +98,7 @@ sed -i \
 -e 's?2. Clash For OpenWRT?3. Applications?' \
 */Makefile
 
-sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-store/Makefile
-sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-bypass/Makefile
+sed -i 's/luci-lib-ipkg/luci-base/g' {luci-app-store,luci-app-bypass}/Makefile
 sed -i 's/"admin"/"admin", "system"/g' luci-app-wizard/files/luci/controller/wizard.lua
 
 bash $GITHUB_WORKSPACE/diy/create_acl_for_luci.sh -a >/dev/null 2>&1
