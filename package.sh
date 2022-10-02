@@ -42,9 +42,9 @@ git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-p
 git clone --depth 1 https://github.com/messense/aliyundrive-webdav aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 git clone --depth 1 https://github.com/messense/aliyundrive-fuse aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/* ./; rm -rf dockerman
+git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome
 
 svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-adguardhome
 svn export https://github.com/immortalwrt/packages/trunk/net/adguardhome
 svn export https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
