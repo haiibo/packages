@@ -43,6 +43,8 @@ git clone --depth 1 https://github.com/messense/aliyundrive-webdav aliyundrive &
 git clone --depth 1 https://github.com/messense/aliyundrive-fuse aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/* ./; rm -rf dockerman
 git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome
+git clone --depth 1 https://github.com/sensec/luci-app-udp2raw
+git clone --depth 1 https://github.com/sensec/openwrt-udp2raw udp2raw
 
 svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom
 svn export https://github.com/immortalwrt/packages/trunk/net/adguardhome
