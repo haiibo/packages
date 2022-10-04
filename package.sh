@@ -31,20 +31,30 @@ git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mo
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
+git clone --depth 1 https://github.com/riverscn/openwrt-iptvhelper && mvdir openwrt-iptvhelper
+git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
 git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall ./; rm -rf passwall1
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./; rm -rf passwall2
 git clone --depth 1 https://github.com/kiddin9/openwrt-bypass && mv -n openwrt-bypass/{luci-app-bypass,lua-maxminddb} ./; rm -rf openwrt-bypass
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./; rm -rf amlogic
 git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
-git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/ddnsto ./; rm -rf nas-packages
-git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/luci-app-ddnsto ./; rm -rf nas-packages-luci
+git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/{ddnsto,linkease} ./; rm -rf nas-packages
+git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/{luci-app-ddnsto,luci-app-linkease} ./; rm -rf nas-packages-luci
 git clone --depth 1 https://github.com/messense/aliyundrive-webdav aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 git clone --depth 1 https://github.com/messense/aliyundrive-fuse aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/* ./; rm -rf dockerman
+git clone --depth 1 https://github.com/kiddin9/qBittorrent-Enhanced-Edition
 git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome
 git clone --depth 1 https://github.com/sensec/luci-app-udp2raw
 git clone --depth 1 https://github.com/sensec/openwrt-udp2raw udp2raw
+git clone --depth 1 https://github.com/yichya/luci-app-xray
+git clone --depth 1 https://github.com/NateLol/luci-app-oled
+git clone --depth 1 https://github.com/msylgj/luci-app-tencentddns
+git clone --depth 1 https://github.com/BoringCat/luci-app-mentohust
+git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
+git clone --depth 1 https://github.com/peter-tank/luci-app-autorepeater
+git clone --depth 1 https://github.com/ntlf9t/luci-app-easymesh
 
 svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom
 svn export https://github.com/immortalwrt/packages/trunk/net/adguardhome
@@ -53,12 +63,20 @@ svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ssr-mudb-server
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
+svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-eqos
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-aliddns
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-gowebdav
-svn export https://github.com/immortalwrt/packages/trunk/net/gowebdav
+svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-gost
+svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/gowebdav
+svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/gost
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic
 svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wizard
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netspeedtest
+svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
+svn export https://github.com/281677160/openwrt-package/trunk/cpulimit
+svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-homebox/luci-app-homebox
+svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-homebox/homebox
 svn export https://github.com/haiibo/packages/trunk/luci-theme-atmaterial
 svn export https://github.com/haiibo/packages/trunk/luci-theme-atmaterial_new
 svn export https://github.com/haiibo/packages/trunk/luci-theme-opentomcat
@@ -88,7 +106,7 @@ svn export --force https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export --force https://github.com/fw876/helloworld/trunk/tcping
 popd
 
-rm -rf ./*/.svn & rm -rf ./*/.git* & rm -rf ./*/LICENSE
+rm -rf ./*/.* & rm -rf ./*/LICENSE
 find -type f -name '*.md' -print -exec rm -rf {} \;
 find -type f -name Makefile -exec sed -i 's/mosdns[-_]neo/mosdns/g' {} \;
 
