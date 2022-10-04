@@ -31,7 +31,6 @@ git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mo
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
-git clone --depth 1 https://github.com/riverscn/openwrt-iptvhelper && mvdir openwrt-iptvhelper
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
 git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall ./; rm -rf passwall1
@@ -48,15 +47,14 @@ git clone --depth 1 https://github.com/kiddin9/qBittorrent-Enhanced-Edition
 git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome
 git clone --depth 1 https://github.com/sensec/luci-app-udp2raw
 git clone --depth 1 https://github.com/sensec/openwrt-udp2raw udp2raw
-git clone --depth 1 https://github.com/yichya/luci-app-xray
-git clone --depth 1 https://github.com/NateLol/luci-app-oled
-git clone --depth 1 https://github.com/msylgj/luci-app-tencentddns
 git clone --depth 1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
 git clone --depth 1 https://github.com/peter-tank/luci-app-autorepeater
 git clone --depth 1 https://github.com/ntlf9t/luci-app-easymesh
 
 svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom
+svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav/luci-app-gowebdav
+svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav/gowebdav
 svn export https://github.com/immortalwrt/packages/trunk/net/adguardhome
 svn export https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
@@ -66,10 +64,10 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-eqos
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-aliddns
-svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-gowebdav
 svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-gost
-svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/gowebdav
+svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-iptvhelper
 svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/gost
+svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/iptvhelper
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic
 svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wizard
 svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netspeedtest
