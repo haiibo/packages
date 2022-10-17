@@ -70,7 +70,8 @@ svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/go
 svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/iptvhelper
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic
 svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wizard
-svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netspeedtest
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest/luci-app-netspeedtest
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest/speedtest-web
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
 svn export https://github.com/281677160/openwrt-package/trunk/cpulimit
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-homebox/luci-app-homebox
