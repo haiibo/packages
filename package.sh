@@ -44,6 +44,7 @@ git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
 git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mosdns && mvdir openwrt-mosdns
+git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go openwrt-ddns-go && mvdir openwrt-ddns-go
 git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
 git clone --depth 1 https://github.com/linkease/istore-ui && mv -n istore-ui/app-store-ui ./; rm -rf istore-ui
 git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/* ./; rm -rf nas-packages
