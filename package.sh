@@ -56,7 +56,7 @@ svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
-svn export https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass
+svn export https://github.com/haiibo/packages/trunk/luci-app-bypass
 svn export https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic
 svn export https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic
