@@ -107,6 +107,7 @@ popd
 
 rm -rf ./*/.* & rm -rf ./*/LICENSE
 find -type f -name '*.md' -print -exec rm -rf {} \;
+find luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/set luci.main.mediaurlbase/d' {} \;
 # find -type f -name Makefile -exec sed -i 's/mosdns[-_]neo/mosdns/g' {} \;
 
 sed -i \
