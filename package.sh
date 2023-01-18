@@ -69,8 +69,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ssr-mudb-ser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
 svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wizard
-svn export https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest/luci-app-netspeedtest
-svn export https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest/speedtest-web
+svn export https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
 svn export https://github.com/281677160/openwrt-package/trunk/cpulimit
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav/luci-app-gowebdav
