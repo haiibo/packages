@@ -102,6 +102,7 @@ svn export --force https://github.com/fw876/helloworld/trunk/naiveproxy
 svn export --force https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export --force https://github.com/fw876/helloworld/trunk/tcping
 svn export --force https://github.com/fw876/helloworld/trunk/redsocks2
+svn export --force https://github.com/fw876/helloworld/trunk/gn
 popd
 
 rm -rf ./*/.* & rm -rf ./*/LICENSE
