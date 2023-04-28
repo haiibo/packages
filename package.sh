@@ -15,31 +15,31 @@ mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
 
-git clone --depth 1 -b 18.06 https://github.com/kiddin9/luci-theme-edge
-git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
-git clone --depth 1 https://github.com/kiddin9/qBittorrent-Enhanced-Edition
-git clone --depth 1 https://github.com/yaof2/luci-app-ikoolproxy
-git clone --depth 1 https://github.com/tty228/luci-app-serverchan
-git clone --depth 1 https://github.com/ntlf9t/luci-app-easymesh
-git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
-git clone --depth 1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
-git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
-git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
-git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
-git clone --depth 1 https://github.com/hubbylei/luci-app-clash
-git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
-git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
-git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
-git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
-git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
-git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome
-git clone --depth 1 https://github.com/peter-tank/luci-app-autorepeater
-git clone --depth 1 https://github.com/sensec/luci-app-udp2raw
-git clone --depth 1 https://github.com/sensec/openwrt-udp2raw udp2raw
-git clone --depth 1 https://github.com/BoringCat/luci-app-mentohust
-git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
-git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge
+git clone --depth=1 https://github.com/kiddin9/luci-app-dnsfilter
+git clone --depth=1 https://github.com/kiddin9/qBittorrent-Enhanced-Edition
+git clone --depth=1 https://github.com/yaof2/luci-app-ikoolproxy
+git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+git clone --depth=1 https://github.com/ntlf9t/luci-app-easymesh
+git clone --depth=1 https://github.com/zzsj0928/luci-app-pushbot
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
+git clone --depth=1 https://github.com/sirpdboy/luci-app-advanced
+git clone --depth=1 https://github.com/hubbylei/luci-app-clash
+git clone --depth=1 https://github.com/Jason6111/luci-app-netdata
+git clone --depth=1 https://github.com/thinktip/luci-theme-neobird
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
+git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns
+git clone --depth=1 https://github.com/pymumu/openwrt-smartdns smartdns
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
+git clone --depth=1 https://github.com/peter-tank/luci-app-autorepeater
+git clone --depth=1 https://github.com/sensec/luci-app-udp2raw
+git clone --depth=1 https://github.com/sensec/openwrt-udp2raw udp2raw
+git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
+git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
+git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
@@ -76,6 +76,7 @@ svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav/gowebdav
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-homebox/luci-app-homebox
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-homebox/homebox
+svn export https://github.com/syb999/openwrt-19.07.1/trunk/package/network/services/msd_lite && mv -n msd_lite/luci-app-msd_lite ./;
 
 git_sparse_clone openwrt-18.06 "https://github.com/immortalwrt/luci" "luci" applications/luci-app-eqos \
 applications/luci-app-aliddns applications/luci-app-gost applications/luci-app-iptvhelper
@@ -85,7 +86,7 @@ luci-theme-atmaterial luci-theme-atmaterial_new luci-theme-opentomcat luci-theme
 
 mkdir -p helloworld
 pushd helloworld
-git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/{chinadns-ng,dns2socks,dns2tcp,hysteria,ipt2socks,pdnsd-alt,trojan-go,trojan-plus,ssocks,microsocks,brook} ./; rm -rf openwrt-passwall
+git clone --depth=1 -b packages https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/{chinadns-ng,dns2socks,dns2tcp,hysteria,ipt2socks,pdnsd-alt,trojan-go,trojan-plus,ssocks,microsocks,brook} ./; rm -rf openwrt-passwall
 svn export --force https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 svn export --force https://github.com/fw876/helloworld/trunk/simple-obfs
 svn export --force https://github.com/fw876/helloworld/trunk/shadowsocks-rust
