@@ -40,6 +40,8 @@ git clone --depth=1 https://github.com/sensec/openwrt-udp2raw udp2raw
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+git clone --depth=1 https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
@@ -83,28 +85,6 @@ applications/luci-app-aliddns applications/luci-app-gost applications/luci-app-i
 
 git_sparse_clone main "https://github.com/haiibo/packages" "packages" luci-app-wrtbwmon wrtbwmon luci-app-onliner \
 luci-theme-atmaterial luci-theme-atmaterial_new luci-theme-opentomcat luci-theme-opentomato luci-theme-netgear
-
-mkdir -p helloworld
-pushd helloworld
-git clone --depth=1 -b packages https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/{chinadns-ng,dns2socks,dns2tcp,hysteria,ipt2socks,pdnsd-alt,trojan-go,trojan-plus,ssocks,microsocks,brook} ./; rm -rf openwrt-passwall
-svn export --force https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
-svn export --force https://github.com/fw876/helloworld/trunk/simple-obfs
-svn export --force https://github.com/fw876/helloworld/trunk/shadowsocks-rust
-svn export --force https://github.com/fw876/helloworld/trunk/shadowsocksr-libev
-svn export --force https://github.com/fw876/helloworld/trunk/trojan
-svn export --force https://github.com/fw876/helloworld/trunk/v2ray-core
-svn export --force https://github.com/fw876/helloworld/trunk/v2ray-geodata
-svn export --force https://github.com/fw876/helloworld/trunk/v2ray-plugin
-svn export --force https://github.com/fw876/helloworld/trunk/v2raya
-svn export --force https://github.com/fw876/helloworld/trunk/xray-core
-svn export --force https://github.com/fw876/helloworld/trunk/xray-plugin
-svn export --force https://github.com/fw876/helloworld/trunk/lua-neturl
-svn export --force https://github.com/fw876/helloworld/trunk/naiveproxy
-svn export --force https://github.com/fw876/helloworld/trunk/sagernet-core
-svn export --force https://github.com/fw876/helloworld/trunk/tcping
-svn export --force https://github.com/fw876/helloworld/trunk/redsocks2
-svn export --force https://github.com/fw876/helloworld/trunk/gn
-popd
 
 rm -rf ./*/.* & rm -rf ./*/LICENSE
 find -type f -name '*.md' -print -exec rm -rf {} \;
