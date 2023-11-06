@@ -41,7 +41,7 @@ git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openwrt-passwall
-git clone --depth=1 https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
+git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
@@ -56,7 +56,7 @@ git clone --depth 1 https://github.com/messense/aliyundrive-webdav aliyundrive &
 
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
-svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
+svn export https://github.com/fw876/helloworld/branches/main/luci-app-ssr-plus
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-bypass
 svn export https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic
