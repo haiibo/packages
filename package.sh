@@ -24,7 +24,6 @@ git clone --depth=1 https://github.com/ntlf9t/luci-app-easymesh
 git clone --depth=1 https://github.com/zzsj0928/luci-app-pushbot
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
 git clone --depth=1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth=1 https://github.com/hubbylei/luci-app-clash
