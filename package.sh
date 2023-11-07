@@ -1,7 +1,7 @@
 #!/bin/bash
 function git_sparse_clone() {
 branch="$1" rurl="$2" localdir="$3" && shift 3
-git clone -b $branch --depth 1 --filter=blob:none --sparse $rurl $localdir
+git clone -b $branch --depth=1 --filter=blob:none --sparse $rurl $localdir
 cd $localdir
 git sparse-checkout init --cone
 git sparse-checkout set $@
@@ -42,16 +42,16 @@ git clone --depth=1 -b master https://github.com/UnblockNeteaseMusic/luci-app-un
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openwrt-passwall
 git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 
-git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
-git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
-git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mosdns && mvdir openwrt-mosdns
-git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go openwrt-ddns-go && mvdir openwrt-ddns-go
-git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
-git clone --depth 1 https://github.com/linkease/istore-ui && mv -n istore-ui/app-store-ui ./; rm -rf istore-ui
-git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/* ./; rm -rf nas-packages
-git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/* ./; rm -rf nas-packages-luci
-git clone --depth 1 https://github.com/messense/aliyundrive-fuse aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
-git clone --depth 1 https://github.com/messense/aliyundrive-webdav aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
+git clone --depth=1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
+git clone --depth=1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
+git clone --depth=1 https://github.com/sbwml/luci-app-mosdns openwrt-mosdns && mvdir openwrt-mosdns
+git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go openwrt-ddns-go && mvdir openwrt-ddns-go
+git clone --depth=1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
+git clone --depth=1 https://github.com/linkease/istore-ui && mv -n istore-ui/app-store-ui ./; rm -rf istore-ui
+git clone --depth=1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/* ./; rm -rf nas-packages
+git clone --depth=1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/* ./; rm -rf nas-packages-luci
+git clone --depth=1 https://github.com/messense/aliyundrive-fuse aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
+git clone --depth=1 https://github.com/messense/aliyundrive-webdav aliyundrive && mv -n aliyundrive/openwrt/* ./; rm -rf aliyundrive
 
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
