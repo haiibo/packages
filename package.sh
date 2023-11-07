@@ -77,7 +77,7 @@ svn export https://github.com/281677160/openwrt-package/trunk/luci-app-msd_lite
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/luci-app-gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/luci-app-homebox
-svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/homebox
+# svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/homebox
 
 git_sparse_clone openwrt-18.06 "https://github.com/immortalwrt/luci" "luci" applications/luci-app-eqos \
 applications/luci-app-aliddns applications/luci-app-gost applications/luci-app-iptvhelper
