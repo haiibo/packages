@@ -43,11 +43,11 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openw
 git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus
 git clone --depth=1 https://github.com/sirpdboy/luci-app-netwizard
-git clone --depth=1 https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 
 git clone --depth=1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth=1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns openwrt-mosdns && mvdir openwrt-mosdns
+git clone --depth=1 https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go openwrt-ddns-go && mvdir openwrt-ddns-go
 git clone --depth=1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
 git clone --depth=1 https://github.com/linkease/istore-ui && mv -n istore-ui/app-store-ui ./; rm -rf istore-ui
