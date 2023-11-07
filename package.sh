@@ -75,6 +75,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ssr-mudb-ser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
+svn export https://github.com/281677160/openwrt-package/trunk/luci-app-oled
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/luci-app-gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/luci-app-homebox
