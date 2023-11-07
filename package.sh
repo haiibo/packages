@@ -38,7 +38,7 @@ git clone --depth=1 https://github.com/sensec/luci-app-udp2raw
 git clone --depth=1 https://github.com/sensec/openwrt-udp2raw udp2raw
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohust
-git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+git clone --depth=1 -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openwrt-passwall
 git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 
