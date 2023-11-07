@@ -80,9 +80,10 @@ svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/luci-a
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/luci-app-homebox
 # svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/homebox
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
 
 git_sparse_clone openwrt-18.06 "https://github.com/immortalwrt/luci" "luci" applications/luci-app-eqos \
-applications/luci-app-aliddns applications/luci-app-gost applications/luci-app-iptvhelper
+applications/luci-app-gost applications/luci-app-iptvhelper
 
 git_sparse_clone main "https://github.com/haiibo/packages" "packages" luci-app-wrtbwmon wrtbwmon luci-app-onliner \
 luci-theme-atmaterial luci-theme-atmaterial_new luci-theme-opentomcat luci-theme-opentomato luci-theme-netgear luci-app-vssr
