@@ -41,6 +41,9 @@ git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk mentohu
 git clone --depth=1 -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openwrt-passwall
 git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
+git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus
+git clone --depth=1 https://github.com/sirpdboy/luci-app-netwizard
+git clone --depth=1 https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 
 git clone --depth=1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth=1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
@@ -69,8 +72,6 @@ svn export https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/ip
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ssr-mudb-server
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
-svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wizard
-svn export https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
 svn export https://github.com/281677160/openwrt-package/trunk/cpulimit
 svn export https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/op-webdav/luci-app-gowebdav
