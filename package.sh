@@ -83,7 +83,7 @@ git_sparse_clone openwrt-18.06 "https://github.com/immortalwrt/luci" "luci" appl
 applications/luci-app-aliddns applications/luci-app-gost applications/luci-app-iptvhelper
 
 git_sparse_clone main "https://github.com/haiibo/packages" "packages" luci-app-wrtbwmon wrtbwmon luci-app-onliner \
-luci-theme-atmaterial luci-theme-atmaterial_new luci-theme-opentomcat luci-theme-opentomato luci-theme-netgear
+luci-theme-atmaterial luci-theme-atmaterial_new luci-theme-opentomcat luci-theme-opentomato luci-theme-netgear luci-app-vssr
 
 rm -rf ./*/.* & rm -rf ./*/LICENSE
 find -type f -name '*.md' -print -exec rm -rf {} \;
