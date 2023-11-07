@@ -43,6 +43,8 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages openw
 git clone --depth=1 -b main https://github.com/fw876/helloworld && rm -rf helloworld/luci-app-ssr-plus
 git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus
 git clone --depth=1 https://github.com/sirpdboy/luci-app-netwizard
+git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite
+git clone --depth=1 https://github.com/ximiTech/msd_lite
 
 git clone --depth=1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth=1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
@@ -73,7 +75,6 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ssr-mudb-ser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-pppoe-server
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-cpulimit
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-msd_lite
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/luci-app-gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-webdav/gowebdav
 svn export https://github.com/xiangfeidexiaohuo/extra-ipk/trunk/op-homebox/luci-app-homebox
