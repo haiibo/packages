@@ -1,0 +1,57 @@
+name: Download OpenWrt
+
+on:
+  workflow_dispatch:
+  watch:
+    types: started
+  schedule:
+    - cron: 30 * * * *
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id
+    name: build ${{ matrix.target }}
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [armvirt-64, bcm27xx-bcm2710, bcm27xx-bcm2711, rockchip-armv8, x86-64]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Initialization Environment
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo rm -rf /usr/share/dotnet /etc/apt/sources.list.d /usr/local/lib/android
+        sudo -E apt-get -qq update
+        sudo -E apt-get -y install $(curl -fsSL is.gd/depends_ubuntu_2204)
+        sudo -E apt-get -qq autoremove --purge
+        sudo -E apt-get -qq clean
+        sudo timedatectl set-timezone "$TZ"
+
+    - name: Prepare Toolchain Image
+      run: |
+        CACHE_HASH=$(curl -fSsL https://github.com/haiibo/OpenWrt/releases/download/Toolchain/toolchain-lede-master-${{ matrix.target }}.hash)
+        for i in {0..9}
+        do
+          curl -fsL https://github.com/haiibo/OpenWrt/releases/download/Toolchain/toolchain-lede-master-${{ matrix.target }}.img.0$i >> toolchain-lede-master-${{ matrix.target }}.img || break
+        done
+        mkdir openwrt-ro openwrt workdir overlay
+        sudo mount -o loop toolchain-lede-master-${{ matrix.target }}.img openwrt-ro
+        sudo mount -t overlay overlay -o lowerdir=openwrt-ro,upperdir=overlay,workdir=workdir openwrt
+        cd openwrt
+        git pull
+
+    - name: Install Feeds
+      run: |
+        cd openwrt
+        ./scripts/feeds update -a
+        ./scripts/feeds install -a
