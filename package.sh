@@ -102,8 +102,8 @@ sed -i \
 # sed -i 's/luci-lib-ipkg/luci-base/g' {luci-app-store,luci-app-bypass}/Makefile
 # sed -i 's/"wizard"}/"system", "Statistics"}/g' luci-app-wizard/luasrc/controller/wizard.lua
 
-bash $GITHUB_WORKSPACE/diy/create_acl_for_luci.sh -a >/dev/null 2>&1
-bash $GITHUB_WORKSPACE/diy/convert_translation.sh -a >/dev/null 2>&1
+bash $GITHUB_WORKSPACE/.github/diy/create_acl_for_luci.sh -a >/dev/null 2>&1
+bash $GITHUB_WORKSPACE/.github/diy/convert_translation.sh -a >/dev/null 2>&1
 rm -rf create_acl_for_luci.*
 
 exit 0
